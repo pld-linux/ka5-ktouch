@@ -1,15 +1,15 @@
-%define		kdeappsver	21.04.0
+%define		kdeappsver	21.04.1
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		ktouch
 Summary:	ktouch
 Name:		ka5-%{kaname}
-Version:	21.04.0
+Version:	21.04.1
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	a67f09a59102efb34ed0cc576cdf5475
+# Source0-md5:	c1049389d98b1d50b8f06a0efaabf6f6
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel

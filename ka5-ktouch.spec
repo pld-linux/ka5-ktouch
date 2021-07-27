@@ -54,6 +54,13 @@ has its place on the keyboard with associated keys to press. Starting
 with only a few keys to remember you will advance through different
 training levels where additional keys are introduced.
 
+%description -l pl.UTF-8
+KTouch jest programem do nauki i ćwiczenia szybkiego pisania na
+klawiaturze. Każdy palec ma swoje miejsce na klawiaturze i skojarzone
+klawisze, które ma naciskać. Zaczynając od kilku klawiszy
+do zapamiętania, będziesz rozwijał swoje umiejętności przez różne
+poziomy treningu, gdzie będą wprowadzane dodatkowe klawisze.
+
 %prep
 %setup -q -n %{kaname}-%{version}
 

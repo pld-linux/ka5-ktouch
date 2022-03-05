@@ -5,7 +5,7 @@
 Summary:	ktouch
 Name:		ka5-%{kaname}
 Version:	21.12.3
-Release:	1
+Release:	2
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
@@ -15,6 +15,7 @@ BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel
 BuildRequires:	Qt5Network-devel
 BuildRequires:	Qt5Qml-devel
+BuildRequires:	Qt5Quick-controls2-devel
 BuildRequires:	Qt5Quick-devel
 BuildRequires:	Qt5Script-devel
 BuildRequires:	Qt5Sql-devel
@@ -57,9 +58,9 @@ training levels where additional keys are introduced.
 %description -l pl.UTF-8
 KTouch jest programem do nauki i ćwiczenia szybkiego pisania na
 klawiaturze. Każdy palec ma swoje miejsce na klawiaturze i skojarzone
-klawisze, które ma naciskać. Zaczynając od kilku klawiszy
-do zapamiętania, będziesz rozwijał swoje umiejętności przez różne
-poziomy treningu, gdzie będą wprowadzane dodatkowe klawisze.
+klawisze, które ma naciskać. Zaczynając od kilku klawiszy do
+zapamiętania, będziesz rozwijał swoje umiejętności przez różne poziomy
+treningu, gdzie będą wprowadzane dodatkowe klawisze.
 
 %prep
 %setup -q -n %{kaname}-%{version}

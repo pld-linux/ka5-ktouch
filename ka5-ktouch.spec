@@ -48,6 +48,7 @@ BuildRequires:	qt5-qtdeclarative >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	shared-mime-info
 BuildRequires:	tar >= 1:1.22
+BuildRequires:	xorg-lib-libxkbfile-devel
 BuildRequires:	xz
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

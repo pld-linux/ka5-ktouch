@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	22.04.3
+%define		kdeappsver	22.08.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		ktouch
 Summary:	ktouch
 Name:		ka5-%{kaname}
-Version:	22.04.3
+Version:	22.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	b3da2d185a9d49e7b14e5716acbefd86
+# Source0-md5:	497c5f9b87aafae69bf35553736c7688
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel
@@ -63,8 +63,8 @@ training levels where additional keys are introduced.
 KTouch jest programem do nauki i ćwiczenia szybkiego pisania na
 klawiaturze. Każdy palec ma swoje miejsce na klawiaturze i skojarzone
 klawisze, które ma naciskać. Zaczynając od kilku klawiszy do
-zapamiętania, będziesz rozwijał swoje umiejętności przez różne poziomy
-treningu, gdzie będą wprowadzane dodatkowe klawisze.
+zapamiętania, będziesz rozwijał swoje umiejętności przez różne
+poziomy treningu, gdzie będą wprowadzane dodatkowe klawisze.
 
 %prep
 %setup -q -n %{kaname}-%{version}
@@ -118,6 +118,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/pl/man1/ktouch.1*
 %{_mandir}/pt/man1/ktouch.1*
 %{_mandir}/pt_BR/man1/ktouch.1*
+%{_mandir}/ru/man1/ktouch.1*
 %{_mandir}/sv/man1/ktouch.1*
 %{_mandir}/uk/man1/ktouch.1*
 %{_datadir}/metainfo/org.kde.ktouch.appdata.xml
